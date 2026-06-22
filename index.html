@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Srujana Reddi — Aspiring Front-End Developer specializing in HTML, CSS, JavaScript, Python, and AWS Cloud Computing. BCA student portfolio showcasing web development projects and certifications." />
+  <meta name="keywords" content="Srujana Reddi, Front-End Developer, Web Developer, Portfolio, BCA, HTML, CSS, JavaScript, Python, AWS" />
+  <meta name="author" content="Srujana Reddi" />
+  <meta name="theme-color" content="#050816" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Srujana Reddi — Developer Portfolio" />
+  <meta property="og:description" content="Aspiring Front-End Developer | Python Certified | AWS Enthusiast" />
+  <meta property="og:type" content="website" />
+
+  <title>Srujana Reddi — Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== BACKGROUND EFFECTS ======== -->
+  <div class="bg-ambient" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
+  <!-- ======== LOADING SCREEN ======== -->
+  <div id="loading-screen" role="status" aria-label="Loading portfolio">
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">portfolio.sh</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line" id="line-1">
+          <span class="prompt">❯</span>
+          <span class="text" data-text="Initializing Portfolio..."></span>
+          <span class="cursor-blink"></span>
+        </div>
+        <div class="terminal-line" id="line-2">
+          <span class="prompt">❯</span>
+          <span class="status-icon">📦</span>
+          <span class="text" data-text="Loading Projects..."></span>
+        </div>
+        <div class="terminal-line" id="line-3">
+          <span class="prompt">❯</span>
+          <span class="status-icon">🏆</span>
+          <span class="text" data-text="Loading Certifications..."></span>
+        </div>
+        <div class="terminal-line" id="line-4">
+          <span class="prompt">❯</span>
+          <span class="status-icon">💼</span>
+          <span class="text" data-text="Loading Experience..."></span>
+        </div>
+        <div class="terminal-line" id="line-5">
+          <span class="prompt">❯</span>
+          <span class="status-icon">🚀</span>
+          <span class="text success" data-text="Launching Developer Profile..."></span>
+        </div>
+        <div class="terminal-progress" id="terminal-progress">
+          <div class="terminal-progress-bar">
+            <div class="terminal-progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <div id="main-content">
+
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="navbar-inner">
+        <a href="#home" class="nav-logo" aria-label="Home">SR<span>.dev</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="nav-mobile" id="nav-mobile">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Open to Internship Opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="gradient-text">SRUJANA</span> REDDI
+        </h1>
+        <p class="hero-subtitle">Aspiring Front-End Developer</p>
+        <p class="hero-tagline">Python Certified &bull; AWS Enthusiast &bull; Web Developer</p>
+        <p class="hero-description">
+          Passionate BCA student focused on building responsive web applications and continuously expanding skills in web development, cloud computing, and modern technologies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h5v5H2V2zm7 0h5v5H9V2zM2 9h5v5H2V9zm7 0h5v5H9V9z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            View Projects
+          </a>
+          <a href="#" class="btn btn-secondary" id="btn-resume">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v10m0 0L4.5 7.5M8 11l3.5-3.5M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download Resume
+          </a>
+          <a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub Profile" id="btn-github-hero">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/srujana-reddi-525111408" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn Profile" id="btn-linkedin-hero">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== STATS ======== -->
+    <section class="stats-section" id="stats" aria-label="Statistics">
+      <div class="container">
+        <div class="stats-grid reveal stagger-children">
+          <div class="stat-card">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-number" data-target="3" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number" data-target="9" data-suffix="+">0</div>
+            <div class="stat-label">Technical Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💼</div>
+            <div class="stat-number" data-target="2" data-suffix="">0</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">☁️</div>
+            <div class="stat-number" data-target="1" data-suffix="+">0</div>
+            <div class="stat-label">Cloud Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✦ About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+          <p class="section-subtitle">A passionate learner building the skills to create impactful digital experiences.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-info">
+            <h3>Hello, I'm Srujana 👋</h3>
+            <p class="about-text">
+              Motivated BCA student with strong foundations in HTML, CSS, JavaScript, Python, and Cloud Computing. Passionate about building practical projects, solving problems, and continuously learning new technologies.
+            </p>
+            <div class="about-details">
+              <div class="about-detail-item">
+                <div class="about-detail-label">Education</div>
+                <div class="about-detail-value">BCA</div>
+              </div>
+              <div class="about-detail-item">
+                <div class="about-detail-label">College</div>
+                <div class="about-detail-value">Sri Balaji Degree College</div>
+              </div>
+              <div class="about-detail-item">
+                <div class="about-detail-label">Graduation</div>
+                <div class="about-detail-value">Expected 2027</div>
+              </div>
+              <div class="about-detail-item">
+                <div class="about-detail-label">Location</div>
+                <div class="about-detail-value">Visakhapatnam, AP</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="about-avatar">
+              <div class="about-avatar-inner">SR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">⚡ Skills</span>
+          <h2 class="section-title">Technical Toolkit</h2>
+          <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+        </div>
+        <div class="skills-grid reveal stagger-children">
+          <div class="skill-category">
+            <div class="skill-category-icon">🎨</div>
+            <h3 class="skill-category-title">Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-icon">💻</div>
+            <h3 class="skill-category-title">Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-icon">🛠️</div>
+            <h3 class="skill-category-title">Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-icon">☁️</div>
+            <h3 class="skill-category-title">Cloud</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS EC2</span>
+              <span class="skill-tag">Cloud Fundamentals</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-icon">🤝</div>
+            <h3 class="skill-category-title">Professional Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Team Collaboration</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Critical Thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">📦 Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">Practical projects that demonstrate my skills and learning journey.</p>
+        </div>
+        <div class="projects-grid reveal stagger-children">
+
+          <!-- Project 1: CineScope -->
+          <article class="project-card" id="project-cinescope">
+            <div class="project-header">
+              <div class="project-icon">🎬</div>
+              <div class="project-links">
+                <a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View CineScope on GitHub" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link-btn" aria-label="Live Demo" title="Live Demo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CineScope</h3>
+              <p class="project-description">Responsive movie information website built using HTML and CSS featuring modern design principles and multiple pages.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+            </div>
+          </article>
+
+          <!-- Project 2: SkillForge -->
+          <article class="project-card" id="project-skillforge">
+            <div class="project-header">
+              <div class="project-icon">⚡</div>
+              <div class="project-links">
+                <a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View SkillForge on GitHub" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link-btn" aria-label="Live Demo" title="Live Demo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SkillForge</h3>
+              <p class="project-description">Certification, course, and internship tracking dashboard built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Cloud Computing -->
+          <article class="project-card" id="project-cloud">
+            <div class="project-header">
+              <div class="project-icon">☁️</div>
+              <div class="project-links">
+                <a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Cloud Project on GitHub" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link-btn" aria-label="Project Details" title="Details">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Cloud Computing Project</h3>
+              <p class="project-description">AWS EC2 deployment project demonstrating cloud computing fundamentals and GitHub workflows.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tech">AWS EC2</span>
+              <span class="project-tech">GitHub</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CERTIFICATIONS ======== -->
+    <section id="certifications" aria-label="Certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">🏆 Certifications</span>
+          <h2 class="section-title">Professional Credentials</h2>
+          <p class="section-subtitle">Validated skills through industry-recognized certifications.</p>
+        </div>
+        <div class="certs-grid reveal stagger-children">
+          <div class="cert-card">
+            <div class="cert-icon">🐍</div>
+            <div class="cert-name">PCEP™ Certified Entry-Level Python Programmer</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">☁️</div>
+            <div class="cert-name">Cloud Computing With AWS Program</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔐</div>
+            <div class="cert-name">Ethical Hacking &amp; Network Security Program</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <div class="cert-name">HTML Assessment Certificate</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📊</div>
+            <div class="cert-name">Power BI Workshop Certificate</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔄</div>
+            <div class="cert-name">Agile Project Management</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📋</div>
+            <div class="cert-name">Project Management</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🛡️</div>
+            <div class="cert-name">Cybersecurity Awareness</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🎤</div>
+            <div class="cert-name">Effective Presentations</div>
+          </div>
+        </div>
+        <div class="certs-cta reveal">
+          <a href="https://github.com/SrujanaReddi1/Certificates" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-all-certs">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View All Certifications
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EXPERIENCE ======== -->
+    <section id="experience" aria-label="Experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">💼 Experience</span>
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-subtitle">Real-world experience building skills through internships.</p>
+        </div>
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Web Development Intern</h3>
+              <div class="timeline-org">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                InternStump
+              </div>
+              <ul class="timeline-tasks">
+                <li>Frontend development activities</li>
+                <li>HTML and CSS implementation</li>
+                <li>Team collaboration</li>
+                <li>Project development participation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Cloud Computing Project Intern</h3>
+              <div class="timeline-org">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Vital Skills &amp; Tryst IIT Delhi
+              </div>
+              <ul class="timeline-tasks">
+                <li>AWS EC2 deployment</li>
+                <li>Cloud computing concepts</li>
+                <li>GitHub workflows</li>
+                <li>Project resource management</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ACHIEVEMENTS ======== -->
+    <section id="achievements" aria-label="Achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">🌟 Achievements</span>
+          <h2 class="section-title">Milestones</h2>
+          <p class="section-subtitle">Key accomplishments on my development journey.</p>
+        </div>
+        <div class="achievements-grid reveal stagger-children">
+          <div class="achievement-card">
+            <div class="achievement-icon">💻</div>
+            <div class="achievement-text">Active GitHub Profile</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <div class="achievement-text">Multiple Technical Certifications</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">🌐</div>
+            <div class="achievement-text">Web Development Projects</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">☁️</div>
+            <div class="achievement-text">Cloud Computing Experience</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">📚</div>
+            <div class="achievement-text">Continuous Learning Journey</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">📬 Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Open to internship opportunities and collaboration.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="contact-info-card">
+            <h3>Get In Touch</h3>
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value"><a href="mailto:srujana.reddi1@gmail.com">srujana.reddi1@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-value">Visakhapatnam, Andhra Pradesh, India</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">💻</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value"><a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer">github.com/SrujanaReddi1</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🔗</div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value"><a href="https://www.linkedin.com/in/srujana-reddi-525111408" target="_blank" rel="noopener noreferrer">linkedin.com/in/srujana-reddi</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-buttons-card">
+            <h3>Quick Links</h3>
+            <a href="mailto:srujana.reddi1@gmail.com" class="btn btn-primary contact-btn" id="btn-send-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Send Email
+            </a>
+            <a href="https://github.com/SrujanaReddi1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn" id="btn-open-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Open GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/srujana-reddi-525111408" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn" id="btn-open-linkedin">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Open LinkedIn
+            </a>
+            <a href="https://github.com/SrujanaReddi1/Certificates" target="_blank" rel="noopener noreferrer" class="btn btn-ghost contact-btn" id="btn-view-certs">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Certificates
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer-text">
+          Designed &amp; Developed by <span class="highlight">Srujana Reddi</span>
+        </p>
+        <p class="footer-text">
+          Built with HTML, CSS &amp; JavaScript
+        </p>
+      </div>
+    </footer>
+
+  </div><!-- /main-content -->
+
+  <script src="script.js"></script>
+</body>
+</html>
